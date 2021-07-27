@@ -1,41 +1,42 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className=" navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <i
             width="30"
             height="24"
             className="fa fa-diamond d-inline-block align-text-top"
           />
           <span className="logo-text"> Dental-App</span>
-        </a>
+        </Link>
         <div
           className="collapse navbar-collapse justify-content-end "
           id="navbarText"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink className="nav-link" aria-current="page" to="/home">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/about">
                 About
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/services">
                 Services
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="/contact">
                 Contact us
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

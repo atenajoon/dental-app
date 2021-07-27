@@ -18,3 +18,10 @@ code {
 .logo-text {
   padding: 0 0 5% 5%;
 }
+.bg-black {
+  height: 50%;
+  background-color: black;
+  color: floralwhite;
+  font-size: x-large;
+  text-align: center;
+}
