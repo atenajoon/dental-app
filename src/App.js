@@ -5,14 +5,14 @@ import About from "./components/about";
 import Services from "./components/services";
 import Contact from "./components/contact";
 import NotFound from "./components/not-found";
-import Navbar from "./components/common/navbar";
+import Header from "./components/common/header";
 import React from "react";
 import Footer from "./components/common/footer";
 
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+      <Header />
       <main>
         <Switch>
           <Route path="/home" component={Home}></Route>
