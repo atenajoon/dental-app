@@ -25,3 +25,9 @@ code {
   font-size: x-large;
   text-align: center;
 }
+
+.footer-container {
+  background-color: antiquewhite;
+  display: block;
+  min-height: 30vh;
+}
