@@ -7,6 +7,7 @@ import Contact from "./components/contact";
 import NotFound from "./components/not-found";
 import Navbar from "./components/common/navbar";
 import React from "react";
+import Footer from "./components/common/footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Redirect to="/not-found" />
         </Switch>
       </main>
+      <Footer />
     </React.Fragment>
   );
 }
