@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./common/header";
+import Banner from "./common/banner";
 
 const Home = () => {
   return (
     <div>
-      <Header />
+      <Banner />
       <div className="navbar bg-black">
         {" "}
         Call us at (604) 777-0343 or Book an appointment

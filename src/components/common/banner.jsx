@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = () => {
+const Banner = () => {
   return (
     <header>
       <div className="bg-image"></div>
@@ -13,5 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
- 
+export default Banner;
