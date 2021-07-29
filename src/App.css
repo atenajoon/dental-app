@@ -131,6 +131,14 @@
   background-color: var(--primary-btn-color-hover);
   border-color: var(--primary-btn-color-hover);
 }
+.btn--alt {
+  background-color: transparent;
+  color: var(--primary-btn-color);
+  border: 1px solid var(--primary-btn-color) !important;
+}
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
 .btn--green {
   background-color: var(--secondary-btn-color);
   border-color: var(--secondary-btn-color);

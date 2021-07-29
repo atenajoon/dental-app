@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./button";
 
 const WelcomeSection = () => {
   return (
@@ -10,6 +11,7 @@ const WelcomeSection = () => {
         needs. We proudly serve patients in ten different languages with
         extended office hours in a convenient, central Vancouver location.
       </p>
+      <Button className="btn--alt">{"Meet Our Team"}</Button>
     </div>
   );
 };
