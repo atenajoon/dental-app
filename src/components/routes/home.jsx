@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../common/banner";
+import WelcomeSection from "../common/welcomeSection";
 import ContactBar from "../contactBar";
 
 const Home = () => {
@@ -7,7 +8,7 @@ const Home = () => {
     <div>
       <Banner />
       <ContactBar />
-      <h1>Home</h1>
+      <WelcomeSection />
     </div>
   );
 };
