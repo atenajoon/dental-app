@@ -18,4 +18,8 @@ code {
   --navbar-bg-color: #18202e;
   --footer-bg-color: antiquewhite;
   --white-text-color: floralwhite;
+  --primary-btn-color: #800040;
+  --primary-btn-color-hover: #9c1458;
+  --secondary-btn-color: teal;
+  --secondary-btn-color-hover: #066e6e;
 }

@@ -1,14 +1,16 @@
 import React from "react";
 import Address from "../addressBox";
 import WorkingHours from "../workingHoursBox";
+import Button from "./button";
 
 const Footer = () => {
   return (
     <div className="footer-container">
-      <h2>Footer</h2>
-      <div className="footer-content">
-        <Address />
-        <WorkingHours />
+      <Address />
+      <WorkingHours />
+      <div className="content-box footer-contact-box">
+        <Button className="sm">{"Call Now"}</Button>
+        <Button className="btn--green">{"Request an Appointment"}</Button>
       </div>
     </div>
   );
