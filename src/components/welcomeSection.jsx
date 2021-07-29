@@ -4,7 +4,7 @@ import Button from "./common/button";
 const WelcomeSection = () => {
   return (
     <div className="welcome-sec-box">
-      <h3>Who We Are?</h3>
+      <h2>Who We Are?</h2>
       <p className="content-box welcome-sec-content">
         At Diamond Dental Clinic, you are our first priority. From the moment
         you walk in the door, we make it our mission to meet all your dental

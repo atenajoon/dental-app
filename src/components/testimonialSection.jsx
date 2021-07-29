@@ -4,7 +4,7 @@ import Slider from "./common/slider";
 const TestimonialSection = () => {
   return (
     <div className="testimonial-sec-box">
-      Testimonial
+      <h2>What say our patients?</h2>
       <Slider />
     </div>
   );
