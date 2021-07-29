@@ -1,5 +1,6 @@
 import React from "react";
 import ServiceCard from "./common/serviceCard";
+import { serviceSecData } from "../static/data";
 
 const ServiceSection = () => {
   return (
@@ -7,13 +8,16 @@ const ServiceSection = () => {
       <div className=" service-sec-container">
         <h2>Our Services</h2>
         <div className="service-card-box">
-          <ServiceCard className="1">{"Service - 1"}</ServiceCard>
-          <ServiceCard className="2">{"Service - 2"}</ServiceCard>
-          <ServiceCard className="3">{"Service - 3"}</ServiceCard>
+          {serviceSecData.map((item) => (
+            <ServiceCard key={item.id} serviceLink={`/service/${item.id}`}>
+              {item.name}
+            </ServiceCard>
+          ))}
         </div>
       </div>
     </div>
   );
 };
+// <Link href={serviceLink}></Link>
 
 export default ServiceSection;
