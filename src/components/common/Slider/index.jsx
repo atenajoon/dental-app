@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button";
-import CommentCard from "../CommentCard";
+import CommentCard from "../../CommentCard";
 import { testimonialSecData } from "../../../static/data";
 
 const Slider = () => {

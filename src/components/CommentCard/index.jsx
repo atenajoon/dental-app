@@ -1,5 +1,5 @@
 import React from "react";
-import RatingStars from "../ratingStars";
+import RatingStars from "../common/RatingStars";
 
 const CommentCard = ({ children, stars }) => {
   return (

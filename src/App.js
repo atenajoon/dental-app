@@ -1,13 +1,13 @@
 import "./App.css";
 import { Redirect, Route, Switch } from "react-router-dom";
-import Home from "./pages/home";
-import About from "./pages/about";
-import Services from "./pages/services";
-import Contact from "./pages/contact";
-import NotFound from "./pages/not-found";
-import Header from "./components/common/header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
+import Header from "./components/common/Header";
 import React from "react";
-import Footer from "./components/common/footer";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Address from "../Address";
-import WorkingHours from "../WorkingHours";
-import Button from "./Button";
+import Address from "../../Address";
+import WorkingHours from "../../WorkingHours";
+import Button from "../Button";
 
 const Footer = () => {
   return (
