@@ -152,3 +152,14 @@
   padding: 0 18em;
   color: var(--white-text-color);
 }
+.welcome-sec-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.welcome-sec-content {
+  width: 70%;
+  text-align: center;
+}
