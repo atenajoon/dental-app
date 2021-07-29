@@ -179,3 +179,8 @@
   align-items: center;
   padding: 5%;
 }
+.slider-box {
+  width: 70%;
+  text-align: center;
+  border: solid gray 1px;
+}
