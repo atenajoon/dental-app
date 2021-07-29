@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      <div className="navbar bg-black">
+      <div className="navbar black-bg-color">
         {" "}
         Call us at (604) 777-0343 or Book an appointment
       </div>

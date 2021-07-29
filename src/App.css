@@ -94,7 +94,26 @@
 }
 
 .announcement-box {
-  background-color: white;
+  background-color: var(--white);
   padding: 3%;
   max-width: fit-content;
+}
+
+/* my-css */
+
+.logo-text {
+  padding: 0 0 5% 5%;
+}
+.bg-black {
+  height: 50%;
+  background-color: black;
+  color: var(--white-text-color);
+  font-size: x-large;
+  text-align: center;
+}
+
+.footer-container {
+  background-color: var(--footer-bg-color);
+  display: block;
+  min-height: 30vh;
 }

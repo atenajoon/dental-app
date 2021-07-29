@@ -13,21 +13,9 @@ code {
     monospace;
 }
 
-/* my-css */
-
-.logo-text {
-  padding: 0 0 5% 5%;
-}
-.bg-black {
-  height: 50%;
-  background-color: black;
-  color: floralwhite;
-  font-size: x-large;
-  text-align: center;
-}
-
-.footer-container {
-  background-color: antiquewhite;
-  display: block;
-  min-height: 30vh;
+/*  my variables */
+:root {
+  --navbar-bg-color: #18202e;
+  --footer-bg-color: antiquewhite;
+  --white-text-color: floralwhite;
 }
