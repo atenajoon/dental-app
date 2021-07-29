@@ -1,11 +1,11 @@
 import React from "react";
 import RatingStars from "./ratingStars";
 
-const CommentCard = () => {
+const CommentCard = ({ children, stars }) => {
   return (
     <div className="content-box comment-card">
-      <RatingStars />
-      CommentCard text
+      <RatingStars>{stars}</RatingStars>
+      {children}
     </div>
   );
 };

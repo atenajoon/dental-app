@@ -1,9 +1,9 @@
 import React from "react";
 
-const RatingStars = () => {
+const RatingStars = ({ children }) => {
   return (
     <div className="rating-star-box">
-      <small>RatingStars</small>
+      <small>{children} stars</small>
     </div>
   );
 };

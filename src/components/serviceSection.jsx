@@ -8,13 +8,9 @@ const ServiceSection = () => {
       <div className=" service-sec-container">
         <h2>Our Services</h2>
         <div className="service-card-box">
-          {/* {console.log(
-            serviceSecData.map((item) => <li key={item.id}>{item.name}</li>)
-          )} */}
-
-          {serviceSecData.map((item) => (
-            <ServiceCard key={item.id} serviceLink={`/service/${item.id}`}>
-              {item.name}
+          {serviceSecData.map(({ id, name }) => (
+            <ServiceCard key={id} serviceLink={`/service/${id}`}>
+              {name}
             </ServiceCard>
           ))}
         </div>

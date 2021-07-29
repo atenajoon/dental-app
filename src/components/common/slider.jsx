@@ -7,9 +7,10 @@ const Slider = () => {
   return (
     <div className="slider-container">
       <div className="slider-box">
-        {console.log(testimonialSecData)}
-        {testimonialSecData.map((review) => (
-          <CommentCard key={review.id}>{review.comment}</CommentCard>
+        {testimonialSecData.map(({ id, comment, stars }) => (
+          <CommentCard stars={stars} key={id}>
+            {comment}
+          </CommentCard>
         ))}
       </div>
       <Button className="btn--alt">{"More Reviews on Google"}</Button>

@@ -1,7 +1,7 @@
 export const testimonialSecData = [
-  { id: 0, comment: "CommentCard text 1", stars: 0 },
-  { id: 1, comment: "CommentCard text 2", stars: 0 },
-  { id: 2, comment: "CommentCard text 3", stars: 0 },
+  { id: 0, comment: "CommentCard text 1", stars: 3 },
+  { id: 1, comment: "CommentCard text 2", stars: 5 },
+  { id: 2, comment: "CommentCard text 3", stars: 5 },
 ];
 
 export const serviceSecData = [
