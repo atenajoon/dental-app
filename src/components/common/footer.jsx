@@ -9,7 +9,7 @@ const Footer = () => {
       <Address />
       <WorkingHours />
       <div className="content-box footer-contact-box">
-        <Button className="sm">{"Call Now"}</Button>
+        <Button>{"Call Now"}</Button>
         <Button className="btn--green">{"Request an Appointment"}</Button>
       </div>
     </div>
