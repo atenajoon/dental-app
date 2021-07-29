@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "../common/banner";
-import WelcomeSection from "../common/welcomeSection";
+import WelcomeSection from "../welcomeSection";
 import ContactBar from "../contactBar";
+import TestimonialSection from "../testimonialSection";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <ContactBar />
       <WelcomeSection />
+      <TestimonialSection />
     </div>
   );
 };
