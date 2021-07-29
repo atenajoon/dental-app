@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./button";
-import CommentCard from "./commentCard";
-import { testimonialSecData } from "../../static/data";
+import Button from "../Button";
+import CommentCard from "../CommentCard";
+import { testimonialSecData } from "../../../static/data";
 
 const Slider = () => {
   return (

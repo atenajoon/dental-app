@@ -1,9 +1,9 @@
 import React from "react";
-import Banner from "../components/banner";
-import WelcomeSection from "../components/welcomeSection";
-import ContactBar from "../components/contactBar";
-import TestimonialSection from "../components/testimonialSection";
-import ServiceSection from "../components/serviceSection";
+import Banner from "../components/Banner";
+import WelcomeSection from "../components/WelcomeSection";
+import ContactBar from "../components/ContactBar";
+import TestimonialSection from "../components/TestimonialSection";
+import ServiceSection from "../components/ServiceSection";
 
 const Home = () => {
   return (

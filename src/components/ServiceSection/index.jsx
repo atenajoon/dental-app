@@ -1,6 +1,6 @@
 import React from "react";
-import ServiceCard from "./common/serviceCard";
-import { serviceSecData } from "../static/data";
+import ServiceCard from "../common/serviceCard";
+import { serviceSecData } from "../../static/data";
 
 const ServiceSection = () => {
   return (

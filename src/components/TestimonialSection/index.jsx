@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "./common/slider";
+import Slider from "../common/Slider";
 
 const TestimonialSection = () => {
   return (
