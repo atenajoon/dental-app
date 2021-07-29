@@ -5,7 +5,7 @@ const CommentCard = () => {
   return (
     <div className="content-box comment-card">
       <RatingStars />
-      CommentCard
+      CommentCard text
     </div>
   );
 };
