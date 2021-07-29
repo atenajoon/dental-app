@@ -81,3 +81,14 @@
     transform: rotate(360deg);
   }
 }
+
+.footer-content {
+  display: flex;
+}
+
+.address-box {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  max-width: fit-content;
+}
