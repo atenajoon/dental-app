@@ -86,9 +86,15 @@
   display: flex;
 }
 
-.address-box {
+.content-box {
   display: flex;
   flex-direction: column;
+  padding: 3%;
+  max-width: fit-content;
+}
+
+.announcement-box {
+  background-color: white;
   padding: 3%;
   max-width: fit-content;
 }
