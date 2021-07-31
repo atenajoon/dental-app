@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className=" navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav className=" navbar sticky-top navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <i
@@ -19,7 +19,11 @@ const Header = () => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/home">
+              <NavLink
+                className="nav-link active"
+                aria-current="page"
+                to="/home"
+              >
                 Home
               </NavLink>
             </li>
