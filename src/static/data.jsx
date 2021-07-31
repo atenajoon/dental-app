@@ -1,12 +1,10 @@
 export const testimonialSecData = [
-  { id: 0, comment: "CommentCard text 1", stars: 3 },
-  { id: 1, comment: "CommentCard text 2", stars: 5 },
-  { id: 2, comment: "CommentCard text 3", stars: 5 },
+  { id: 1, comment: "comment text - 1", start: 5 },
+  { id: 2, comment: "comment text - 2", start: 3 },
+  { id: 3, comment: "comment text - 3", start: 4 },
 ];
-
 export const serviceSecData = [
-  // +tag image
-  { id: 0, name: "Service 1" },
-  { id: 1, name: "Service 2" },
-  { id: 2, name: "Service 3" },
+  { id: 1, name: "Service - 1" },
+  { id: 2, name: "Service - 2" },
+  { id: 3, name: "Service - 3" },
 ];
