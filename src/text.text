@@ -1,0 +1,142 @@
+//banner:
+.banner-image {
+  background-image: url("../images/clinic.jpg");
+
+  /* Add the blur effect */
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+
+  /* Center and scale the image nicely */
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/* Position text in the middle of the page/image */
+.banner-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 6%;
+  text-align: center;
+}
+
+
+//////////////////////
+
+//button:
+
+.btn {
+  font: inherit;
+  background-color: $primary;
+  color: --white;
+  box-shadow: inset -2px -1px 4px 0px rgb(0 0 0 / 25%);
+  margin: 0.7rem;
+  /* padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid $primary); */
+}
+.btn:hover {
+  background-color: $primary-hover;
+  border-color: $primary-hover;
+}
+.btn--alt {
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid $primary !important;
+}
+.btn--alt:hover {
+  background-color: #f8dae9;
+}
+.btn--green {
+  background-color: $secondary;
+  border-color: $secondary;
+}
+.btn--green:hover {
+  background-color: $secondary-hover;
+  border-color: $secondary-hover;
+}
+
+////////////////////////////////
+
+// common:
+
+$font-stack: Arial, Helvetica, sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 1;
+  padding: 0;
+}
+body {
+  background-color: $light;
+  font-family: $font-stack;
+  line-height: 16;
+}
+// .btn {
+//   background-color: $light;
+// }
+
+
+//////////////////////////
+//style:
+
+@import "common";
+@import "variables";
+// @import "mixins";
+// @import "functions";
+// @import "utils";
+@import "banner";
+@import "button";
+
+/////
+//style:
+
+// Utilities
+@import "utilities/variables";
+
+// Base Rules
+@import "base/normalize";
+// @import "base/global";
+
+// @import "../variables";
+
+// @import "../common/common";
+// // @import "mixins";
+// // @import "functions";
+// // @import "utils";
+// // @import "banner";
+@import "../button";
+//////////////////////////
+
+//variables:
+/*  my variables */
+:root {
+  $primary-dark: #18202e;
+  $light: antiquewhite;
+  $white: floralwhite;
+  $gray: rgba(208, 208, 210, 0.29);
+  $primary: #800040;
+  $primary-hover: #9c1458;
+  $secondary: teal;
+  $secondary-hover: #066e6e;
+  $black: black;
+}

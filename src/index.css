@@ -1,5 +1,4 @@
 body {
-  background-color: red;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,17 +10,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-/*  my variables */
-:root {
-  --navbar-bg-color: #18202e;
-  --footer-bg-color: antiquewhite;
-  --white-text-color: floralwhite;
-  --testimonial-bg-color: rgba(208, 208, 210, 0.29);
-  --primary-btn-color: #800040;
-  --primary-btn-color-hover: #9c1458;
-  --secondary-btn-color: teal;
-  --secondary-btn-color-hover: #066e6e;
-  --contact-bar-bg-color: black;
 }
