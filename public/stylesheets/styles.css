@@ -337,6 +337,13 @@ template {
   display: none;
 }
 
+.content-box {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  max-width: fit-content;
+}
+
 .btn {
   font: inherit;
   background-color: #800040;
