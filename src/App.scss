@@ -4,13 +4,19 @@
 
 .contact-bar {
   @include flex;
+  align-items: center;
   background-color: $cl-black;
   color: $cl-white;
-  padding: 0 18em;
+  padding: 0 30rem;
 }
 
 #welcome-sec {
   @include flex-sections;
+
+  p {
+    width: 70%;
+    text-align: center;
+  }
 }
 #testimonial-sec {
   @include flex-sections;
@@ -22,19 +28,11 @@
   @include flex;
   background-color: $cl-black;
   color: $cl-light;
+
   h3 {
     color: lighten($cl-light, 10%);
   }
 }
-
-// .footer-container {
-// display: flex;
-//   justify-content: space-between;
-//   background-color: var(--footer-bg-color);
-//   min-height: 30vh;
-// }
-
-// /* my-css */
 
 // .welcome-sec-content,
 // .slider-container,
@@ -42,6 +40,9 @@
 //   width: 70%;
 //   text-align: center;
 // }
+
+// /* my-css */
+
 // .testimonial-sec {
 //   background-color: var(--testimonial-bg-color);
 // }
