@@ -32,3 +32,34 @@
  * BREAKPOINTS
  * Breakpoints................Global breakpoint definitions
  */
+
+/*------------------------------------*\
+     #COLORS
+ \*------------------------------------*/
+
+/**
+ * Brand Colors
+ * 1) Brand=specific colors
+ */
+$cl-primary: #800040;
+$cl-secondary: teal;
+$cl-light: #ffe6cb;
+$cl-dark: #18202e;
+
+/**
+  * Neutral Colors
+  * 1) Neutral colors are grayscale values used throughout the UI
+  */
+$cl-white: floralwhite;
+$cl-gray: #434242;
+$cl-black: black;
+
+/**
+  * Utility Colors
+  * 1) Utility colors are colors used to provide feedback, such as alert messages,
+  *    form validation, etc.
+  */
+$cl-info: #0948ad;
+$cl-error: #860a25;
+$cl-success: rgb(7, 134, 117);
+$cl-warning: #afa51a;
