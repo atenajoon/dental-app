@@ -16,12 +16,14 @@
   border-color: lighten($cl-primary, 5%);
 }
 .btn--alt {
-  background-color: transparent;
+  background-color: lighten($cl-primary, 70%);
+  // background-color: transparent;
   color: $cl-primary;
   border: 1px solid $cl-primary;
 }
 .btn--alt:hover {
-  background-color: lighten($cl-primary, 70%);
+  background-color: $cl-primary;
+  color: $cl-white;
 }
 .btn--green {
   background-color: $cl-secondary;
