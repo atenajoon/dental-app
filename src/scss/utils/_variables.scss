@@ -115,8 +115,8 @@ $l-linelength-width: 36rem !default;
   */
 
 $spacing: 1rem;
-$spacing-small: round(0.5 * $spacing);
-$spacing-large: round(2 * $spacing);
+$spacing-sm: round(0.5 * $spacing);
+$spacing-lg: round(2 * $spacing);
 
 /*------------------------------------*\
      #BORDERS
