@@ -5,7 +5,7 @@ const Banner = () => {
     <header>
       <div className="banner-image"></div>
       <div className="banner-text">
-        <h2>Welcome to</h2>
+        <p>Welcome to</p>
         <h1>Diamond Dental Clinic</h1>
         <p>Bringing a brighter smile is our job...</p>
       </div>

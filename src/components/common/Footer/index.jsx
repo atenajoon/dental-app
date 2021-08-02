@@ -5,7 +5,7 @@ import Button from "../Button";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <div id="footer-sec">
       <Address />
       <WorkingHours />
       <div className="content-box footer-contact-box">

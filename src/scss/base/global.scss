@@ -9,9 +9,32 @@ body {
   height: 100%;
 }
 
-#bootstrap-overrides h1 {
-  color: $cl-primary;
+#bootstrap-overrides h2 {
+  color: darken($cl-gray, 5%);
 }
+#bootstrap-overrides {
+  color: lighten($cl-gray, 15%);
+}
+
+// body {
+//   background: #F3EFE0;
+//   font-size: 15px;
+//   line-height: 1.64;
+// }
+
+// h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, strong, b {
+//   font-family: 'Open Sans', sans-serif !important;
+//   margin-bottom: 20px;
+// }
+
+// h2, h3 {
+//   font-weight: 300;
+//   color: #22A39F;
+// }
+
+// h3 {
+//   font-size: 28px;
+// }
 
 //  common styles
 .content-box {
