@@ -20,6 +20,11 @@
 }
 #footer-sec {
   @include flex;
+  background-color: $cl-black;
+  color: $cl-light;
+  h3 {
+    color: lighten($cl-light, 10%);
+  }
 }
 
 // .footer-container {
