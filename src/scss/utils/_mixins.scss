@@ -3,3 +3,9 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@mixin flex-sections {
+  @include flex;
+  flex-direction: column;
+  padding: $spacing-lg;
+}
