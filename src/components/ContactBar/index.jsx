@@ -4,9 +4,9 @@ import Button from "../common/Button";
 const ContactBar = () => {
   return (
     <div className="contact-bar">
-      <Button>{"Call Us Now"}</Button>
+      <Button className="btn--green">{"Call Us Now"}</Button>
       <span>OR</span>
-      <Button className="btn--green">{"Request an Appointment"}</Button>
+      <Button className="btn--yellow">{"Request an Appointment"}</Button>
     </div>
   );
 };
