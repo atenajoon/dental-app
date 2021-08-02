@@ -50,7 +50,7 @@ $cl-dark: #18202e;
   * Neutral Colors
   * 1) Neutral colors are grayscale values used throughout the UI
   */
-$cl-white: floralwhite;
+$cl-white: rgb(252, 250, 246);
 $cl-gray: #434242;
 $cl-black: black;
 
@@ -63,3 +63,99 @@ $cl-info: #0948ad;
 $cl-error: #860a25;
 $cl-success: rgb(7, 134, 117);
 $cl-warning: #afa51a;
+
+// //////////////////////////////////
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Font Family
+ */
+$font-primary: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+$font-secondary: serif;
+
+/**
+  * Font Sizing
+  */
+$font-size-sm: 0.75rem;
+$font-size-sm-2: 0.85rem;
+$font-size-med: 1rem;
+$font-size-med-2: 1.2rem;
+$font-size-large: 2rem;
+$font-size-xl: 3rem;
+
+$font-size-h1: 48px !default;
+$font-size-h2: 36px !default;
+$font-size-h3: 27px !default;
+$font-size-h4: 19px !default;
+/**
+  * Line Height
+  */
+$line-height: 1.5;
+
+/*------------------------------------*\
+     #LAYOUT
+ \*------------------------------------*/
+
+/**
+  * Max Width
+  */
+$l-max-width: 60rem !default;
+$l-linelength-width: 36rem !default;
+
+/*------------------------------------*\
+     #SPACING
+ \*------------------------------------*/
+
+/**
+  * Spacing and offsets
+  * 1) Used to space grids and body padding
+  */
+
+$spacing: 1rem;
+$spacing-small: round(0.5 * $spacing);
+$spacing-large: round(2 * $spacing);
+
+/*------------------------------------*\
+     #BORDERS
+ \*------------------------------------*/
+
+/**
+  * Border
+  */
+$border-thickness: 1px;
+
+/**
+  * Border radius
+  */
+$border-radius: 8px;
+
+/*------------------------------------*\
+     #ANIMATION
+ \*------------------------------------*/
+
+/**
+  * Transition Speed
+  */
+$anim-fade-quick: 0.15s;
+$anim-fade-long: 0.4s;
+
+/**
+  * Transition Ease
+  */
+$anim-ease: ease-out;
+
+/*------------------------------------*\
+     #BREAKPOINTS
+ \*------------------------------------*/
+
+/**
+  * Breakpoints used in media queries
+  * 1) These are not the only breakpoints used, but they provide a few defaults
+  */
+$bp-sm: 28em;
+$bp-md: 47em;
+$bp-lg: 60em;
+$bp-xl: 70em;
