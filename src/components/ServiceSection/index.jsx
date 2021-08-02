@@ -4,7 +4,7 @@ import { serviceSecData } from "../../static/data";
 
 const ServiceSection = () => {
   return (
-    <div className="service-sec-box">
+    <div id="service-sec">
       <div className=" service-sec-container">
         <h2>Our Services</h2>
         <div className="service-card-box">
