@@ -1,11 +1,15 @@
 @mixin flex {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+@mixin flex-container {
+  @include flex;
+
+  flex-direction: column;
 }
 
 @mixin flex-sections {
-  @include flex;
-  flex-direction: column;
+  @include flex-container;
+  align-items: center;
   padding: $spacing-lg;
 }
