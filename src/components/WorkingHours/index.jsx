@@ -7,9 +7,9 @@ const WorkingHours = () => {
       <p>
         Mon. to Fri. <br /> 10 am to 5 pm
       </p>
-      <div className="announcement-box">
+      <p>
         We Do <span className="text-danger">NOT</span> work on Weekends
-      </div>
+      </p>
     </div>
   );
 };
