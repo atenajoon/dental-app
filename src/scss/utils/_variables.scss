@@ -1,12 +1,34 @@
-//  colors
-$primary-dark: #18202e;
-$light: antiquewhite;
-$white: floralwhite;
-$gray: rgba(208, 208, 210, 0.29);
-$primary: #800040;
-$primary-hover: #9c1458;
-$secondary: teal;
-$secondary-hover: #066e6e;
-$black: black;
+/*------------------------------------*\
+    #VARIABLES
+\*------------------------------------*/
 
-// fonts
+/**
+ * CONTENTS
+ *
+ * COLORS
+ * Brand Colors...............Globally-available variables and config
+ * Neutral Colors.............Grayscale colors, including white and black
+ * Utility Colors.............Info, Warning, Error, Success
+ *
+ * TYPOGRAPHY
+ * Font Families..............The fonts used in the design system
+ * Sizing.....................Font sizing
+ *
+ * LAYOUT
+ * Max-widths.................Maximum layout container width
+ *
+
+ * SPACING
+ * Spacing defaults...........Spacing between elements
+ *
+ * BORDERS
+ * Border Width...............Border thicknesses
+ * Border Radius..............Border radius definitions
+ *
+ * ANIMATION
+ * Animation Speed............Transition/animation speed variables
+ * Animation easing...........Easing variables
+ *
+ * BREAKPOINTS
+ * Breakpoints................Global breakpoint definitions
+ */
