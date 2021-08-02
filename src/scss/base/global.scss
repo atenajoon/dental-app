@@ -8,6 +8,9 @@ body {
   font-family: "Open Sans", sans-serif !important;
   height: 100%;
 }
+h2 {
+  padding: $spacing-sm 0 $spacing-lg;
+}
 
 #bootstrap-overrides {
   color: lighten($cl-gray, 15%);

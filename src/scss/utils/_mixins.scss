@@ -1,6 +1,10 @@
-@mixin flex {
+@mixin flex($align: initial) {
   display: flex;
   justify-content: space-around;
+
+  @if $align != initial {
+    align-items: $align;
+  }
 }
 @mixin flex-container {
   @include flex;
@@ -11,4 +15,9 @@
   @include flex-container;
   align-items: center;
   padding: $spacing-lg;
+}
+
+@mixin container-width {
+  width: 70%;
+  text-align: center;
 }

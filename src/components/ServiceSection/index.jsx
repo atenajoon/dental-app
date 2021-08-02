@@ -9,8 +9,9 @@ const ServiceSection = () => {
         <h2>Our Services</h2>
         <div className="service-card-box">
           {serviceSecData.map(({ id, name }) => (
-            <ServiceCard key={id} serviceLink={`/service/${id}`}>
+            <ServiceCard key={id} serviceLink={`/service/${id}`} className={id}>
               {name}
+              {console.log(id)}
             </ServiceCard>
           ))}
         </div>
