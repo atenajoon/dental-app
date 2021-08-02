@@ -13,7 +13,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <main>
+      <main id="bootstrap-overrides">
         <Switch>
           <Route path="/home" component={Home}></Route>
           <Route path="/about" component={About}></Route>
