@@ -2,19 +2,8 @@
 
 // NavBar:
 
-nav {
+#nav {
   background-color: $cl-dark;
-}
-
-nav {
-  .container-fluid {
-    padding: 0 5%;
-  }
-  .logo-text {
-    padding-left: 5%;
-  }
-  .logo-text,
-  .fa-diamond,
   .nav-link {
     color: $cl-white;
   }
@@ -23,5 +12,11 @@ nav {
   .nav-link:hover,
   .active {
     color: lighten($cl-primary, 30%);
+  }
+  .container-fluid {
+    padding: 0 5%;
+  }
+  .logo-text {
+    padding-left: 5%;
   }
 }

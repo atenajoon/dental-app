@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className=" navbar sticky-top navbar-expand-lg ">
+    <nav id="nav" className=" navbar navbar-dark sticky-top navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <i
@@ -11,11 +11,24 @@ const Header = () => {
             height="24"
             className="fa fa-diamond d-inline-block align-text-top"
           />
-          <span className="logo-text"> Dental-App</span>
+          <span className="navbar-brand mb-0 h1 logo-text"> Dental-App</span>
         </Link>
+
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div
           className="collapse navbar-collapse justify-content-end "
-          id="navbarText"
+          id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
