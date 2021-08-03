@@ -155,7 +155,6 @@ $anim-ease: ease-out;
   * Breakpoints used in media queries
   * 1) These are not the only breakpoints used, but they provide a few defaults
   */
-$bp-sm: 28em;
-$bp-md: 47em;
-$bp-lg: 60em;
-$bp-xl: 70em;
+$breakpoint-sm: 400px;
+$breakpoint-md: 767px;
+$breakpoint-lg: 990px;

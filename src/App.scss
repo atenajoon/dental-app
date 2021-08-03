@@ -3,11 +3,26 @@
 @use "mixins";
 
 .contact-bar {
-  @include flex;
-  align-items: center;
-  background-color: $cl-black;
-  color: $cl-white;
-  padding: 0 30rem;
+  @media (max-width: $breakpoint-sm) {
+    @include flex-container;
+    @include contact-sec;
+    padding: 0;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    @include flex;
+    @include contact-sec;
+    padding: 0 5rem;
+  }
+  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    @include flex;
+    @include contact-sec;
+    padding: 0 10rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    @include flex;
+    @include contact-sec;
+    padding: 0 20rem;
+  }
 }
 
 #welcome-sec {

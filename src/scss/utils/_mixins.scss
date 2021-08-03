@@ -21,3 +21,8 @@
   width: 70%;
   text-align: center;
 }
+@mixin contact-sec {
+  background-color: $cl-black;
+  color: $cl-white;
+  align-items: center;
+}
