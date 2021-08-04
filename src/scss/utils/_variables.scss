@@ -17,7 +17,6 @@
  * LAYOUT
  * Max-widths.................Maximum layout container width
  *
-
  * SPACING
  * Spacing defaults...........Spacing between elements
  *
@@ -152,9 +151,11 @@ $anim-ease: ease-out;
  \*------------------------------------*/
 
 /**
-  * Breakpoints used in media queries
-  * 1) These are not the only breakpoints used, but they provide a few defaults
+  * Breakpoints
+  * 1) Used to set media breakpoints for different devices
   */
-$breakpoint-sm: 400px;
-$breakpoint-md: 767px;
-$breakpoint-lg: 990px;
+$xl: "xl";
+$lg: "lg";
+$md: "md";
+$sm: "sm";
+$xs: "xs";
