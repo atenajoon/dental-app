@@ -17,12 +17,36 @@
   padding: $spacing-lg;
 }
 
-@mixin container-width {
-  width: 70%;
+@mixin container-width($width: 70%) {
+  width: $width;
   text-align: center;
 }
 @mixin contact-sec {
   background-color: $cl-black;
   color: $cl-white;
   align-items: center;
+}
+
+@mixin media($breakpoint) {
+  @if $breakpoint == $xl {
+    @media only screen and (max-width: 1919px) {
+      @content;
+    }
+  } @else if $breakpoint == $lg {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $breakpoint == $md {
+    @media only screen and (max-width: 991px) {
+      @content;
+    }
+  } @else if $breakpoint == $sm {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == $xs {
+    @media only screen and (max-width: 575px) {
+      @content;
+    }
+  }
 }
