@@ -4,7 +4,7 @@ export const testimonialSecData = [
   { id: 3, comment: "comment text - 3", start: 4 },
 ];
 export const serviceSecData = [
-  { id: 1, name: "Service - 1" },
-  { id: 2, name: "Service - 2" },
-  { id: 3, name: "Service - 3" },
+  { id: 1, name: "GENERAL DENTISTRY" },
+  { id: 2, name: "HYGIENE SERVICES" },
+  { id: 3, name: "PEDIATRIC DENTISTRY" },
 ];

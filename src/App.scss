@@ -3,24 +3,22 @@
 @use "mixins";
 
 .contact-bar {
-  @media (max-width: $breakpoint-sm) {
+  @include contact-sec;
+
+  @include media($xs) {
     @include flex-container;
-    @include contact-sec;
     padding: 0;
   }
-  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  @include media($sm) {
     @include flex;
-    @include contact-sec;
     padding: 0 5rem;
   }
-  @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+  @include media($lg) {
     @include flex;
-    @include contact-sec;
     padding: 0 10rem;
   }
-  @media (min-width: $breakpoint-lg) {
+  @include media($xl) {
     @include flex;
-    @include contact-sec;
     padding: 0 20rem;
   }
 }
@@ -36,58 +34,15 @@
 #testimonial-sec {
   @include flex-sections;
   background-color: lighten($cl-gray, 65%);
-
-  // @include container-width .slider-container,
-
-  // .slider-box,
-  // .service-card-box {
-  //   display: flex;
-  //   justify-content: space-around;
-  // }
-  // .comment-card,
-  // .service-card {
-  //   border: solid black 1px;
-  //   margin: 3% 0;
-  // }
 }
 
 #service-sec {
-  @include flex-sections;
-  div {
-    text-align: center;
-  }
-
-  .service-card-box {
-    @include flex;
-  }
-  .service-sec-container {
-    @include container-width;
-  }
-
-  .service-image {
-    @include flex(center);
-    width: 15rem;
-    min-height: 15rem;
-  }
-
-  .service-image-1 {
-    /* background-image: url("./images/map.JPG"); */
-    background-color: hotpink;
-  }
-  .service-image-2 {
-    /* background-image: url("./images/map.JPG"); */
-    background-color: rgb(105, 255, 210);
-  }
-  .service-image-3 {
-    /* background-image: url("./images/map.JPG"); */
-    background-color: rgb(105, 208, 255);
-  }
 }
 
 #footer-sec {
   @include flex;
   background-color: $cl-black;
-  color: $cl-light;
+  color: lighten($cl-light, 7%);
 
   h3 {
     color: lighten($cl-light, 10%);

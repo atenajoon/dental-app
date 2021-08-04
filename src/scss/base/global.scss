@@ -9,7 +9,7 @@ body {
   height: 100%;
 }
 h2 {
-  padding: $spacing-sm 0 $spacing-lg;
+  padding: $spacing-sm 0 $spacing;
 }
 
 #bootstrap-overrides {
@@ -21,7 +21,16 @@ h2 {
 
 //  common styles
 .content-box {
-  @include flex-container;
-  padding: $spacing-lg;
+  // @include flex-container;
+  // @media (max-width: $breakpoint-sm) {
+  //   padding: 0;
+  // }
+  // @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  //   padding: $spacing;
+  // }
+  // @media (min-width: $breakpoint-md) {
+  //   padding: $spacing-lg;
+  // }
+
   // max-width: fit-content;
 }
