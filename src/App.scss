@@ -27,7 +27,10 @@
   @include flex-sections;
 
   p {
-    @include container-width;
+    @include media($xs) {
+      @include container-width(100%);
+    }
+    @include container-width(70%);
   }
 }
 
