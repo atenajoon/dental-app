@@ -6,7 +6,7 @@ import { testimonialSecData } from "../../../static/data";
 const Slider = () => {
   return (
     <div className="slider-container">
-      <div className="slider-box">
+      <div className=" d-flex justify-content-between slider-box">
         {testimonialSecData.map(({ id, comment, stars }) => (
           <CommentCard stars={stars} key={id}>
             {comment}

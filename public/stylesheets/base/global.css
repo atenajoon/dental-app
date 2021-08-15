@@ -1,4 +1,4 @@
-.content-box {
+.d-flex flex-column justify-content-center {
   display: flex;
   flex-direction: column;
   padding: 3%;

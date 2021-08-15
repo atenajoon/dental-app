@@ -3,28 +3,13 @@
 @use "mixins";
 
 .contact-bar {
-  @include contact-sec;
-
-  @include media($xs) {
-    @include flex-container;
-    padding: 0;
-  }
-  @include media($sm) {
-    @include flex;
-    padding: 0 5rem;
-  }
-  @include media($lg) {
-    @include flex;
-    padding: 0 10rem;
-  }
-  @include media($xl) {
-    @include flex;
-    padding: 0 20rem;
-  }
+  background-color: $cl-black;
+  color: $cl-white;
+  align-items: center;
 }
 
 #welcome-sec {
-  @include flex-sections;
+  text-align: center;
 
   p {
     @include media($xs) {
@@ -35,15 +20,11 @@
 }
 
 #testimonial-sec {
-  @include flex-sections;
+  text-align: center;
   background-color: lighten($cl-gray, 65%);
 }
 
-#service-sec {
-}
-
 #footer-sec {
-  @include flex;
   background-color: $cl-black;
   color: lighten($cl-light, 7%);
 
@@ -62,5 +43,10 @@
     //   background-size: cover;
     //   background-position: center center;
     //   background-attachment: fixed;
+  }
+
+  @include media($xs) {
+    flex-direction: column;
+    align-items: center;
   }
 }

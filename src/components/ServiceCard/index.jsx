@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ServiceCard = ({ children, className = "" }) => {
+const ServiceCard = ({ serviceLink, name, imgSrc }) => {
   return (
-    <div className="content-box service-card">
-      <div className={`service-image service-image-${className}`}>
-        <Link to="/services">{children}</Link>
-        {console.log("class", className)}
+    // <div className="p-3 p-lg-4 service-sec-card">
+    <Link className="p-3 p-lg-4 service-sec-card" to={serviceLink}>
+      <div>
+        <img src={imgSrc} />
+        <div className="img-cover" />
+        <h3 id="h3">{name}</h3>
       </div>
-    </div>
+    </Link>
+    // </div>
   );
 };
 

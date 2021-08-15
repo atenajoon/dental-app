@@ -51,7 +51,7 @@ h1 {
    */
 
 hr {
-  box-sizing: content-box; /* 1 */
+  box-sizing: d-flex flex-column justify-content-center; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }

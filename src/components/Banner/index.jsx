@@ -7,7 +7,7 @@ const Banner = () => {
       <div className="banner-text">
         <p>Welcome to</p>
         <h1>Diamond Dental Clinic</h1>
-        <p>Bringing a brighter smile is our job...</p>
+        <p id="slogan">Let us bring you a brighter smile...</p>
       </div>
     </header>
   );

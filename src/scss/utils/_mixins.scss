@@ -21,11 +21,6 @@
   width: $width;
   text-align: center;
 }
-@mixin contact-sec {
-  background-color: $cl-black;
-  color: $cl-white;
-  align-items: center;
-}
 
 @mixin media($breakpoint) {
   @if $breakpoint == $xl {

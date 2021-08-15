@@ -1,23 +1,32 @@
 import React from "react";
+import { Container, Row, Col } from "reactstrap";
 import ServiceCard from "../ServiceCard";
 import { serviceSecData } from "../../static/data";
+import "../../scss/ServiceSection.scss";
 
 const ServiceSection = () => {
   return (
-    <div id="service-sec">
-      <div className=" service-sec-container">
-        <h2>Our Services</h2>
-        <div className="service-card-box">
-          {serviceSecData.map(({ id, name }) => (
-            <ServiceCard key={id} serviceLink={`/service/${id}`} className={id}>
-              <h4>{name}</h4>
-            </ServiceCard>
-          ))}
-        </div>
-      </div>
-    </div>
+    <Container>
+      {/* <div className="d-flex flex-column flex-lg-row w-100 justify-content-between font-size-sm">
+        <div className="">teset 1</div>
+        <div>test 2</div>
+      </div> */}
+      <h2 className="d-flex justify-content-center">Our Services</h2>
+      <Row>
+        {serviceSecData.map(({ id, name, imgSrc }) => (
+          <Col md={6} lg={4}>
+            <ServiceCard
+              key={id}
+              serviceLink={`/Services`}
+              // serviceLink={`/service/${id}`}
+              name={name}
+              imgSrc={imgSrc}
+            ></ServiceCard>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
-// <Link href={serviceLink}></Link>
 
 export default ServiceSection;

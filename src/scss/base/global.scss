@@ -1,4 +1,4 @@
-@import "../utils/mixins";
+// @import "../utils/mixins";
 @use "variables";
 
 //  base
@@ -19,18 +19,37 @@ h2 {
   color: darken($cl-gray, 5%);
 }
 
-//  common styles
-.content-box {
-  // @include flex-container;
-  // @media (max-width: $breakpoint-sm) {
-  //   padding: 0;
-  // }
-  // @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
-  //   padding: $spacing;
-  // }
-  // @media (min-width: $breakpoint-md) {
-  //   padding: $spacing-lg;
-  // }
-
-  // max-width: fit-content;
+#bootstrap-overrides .service-sec-card h3 {
+  color: darken($cl-white, 5%);
 }
+
+//  common styles
+// .d-flex flex-column justify-content-center {
+//   @include flex-container;
+// @media (max-width: $breakpoint-sm) {
+//   padding: 0;
+// }
+// @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+//   padding: $spacing;
+// }
+// @media (min-width: $breakpoint-md) {
+//   padding: $spacing-lg;
+// }
+
+// @include media($xs) {
+//   @include flex-container;
+//   padding: 0;
+// }
+// @include media($sm) {
+//   padding: $spacing;
+// }
+// @include media($lg) {
+//   padding: $spacing-lg;
+// }
+// @include media($xl) {
+//   @include flex;
+//   padding: 0 20rem;
+// }
+
+//   max-width: fit-content;
+// }
