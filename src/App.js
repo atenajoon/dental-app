@@ -10,10 +10,6 @@ import React from "react";
 import Footer from "./components/common/Footer";
 
 function App() {
-  const handleCall = () => {
-    console.log("calling");
-  };
-
   return (
     <React.Fragment>
       <Header />
@@ -28,7 +24,7 @@ function App() {
           <Redirect to="/not-found" />
         </Switch>
       </main>
-      <Footer onCall={handleCall} contactLink={`/Contact`} />
+      <Footer contactLink={`/Contact`} />
     </React.Fragment>
   );
 }

@@ -5,7 +5,7 @@ import Address from "../../Address";
 import WorkingHours from "../../WorkingHours";
 import Button from "../Button";
 
-const Footer = ({ onCall, contactLink }) => {
+const Footer = ({ contactLink }) => {
   return (
     <div id="footer-sec" className=" p-3 p-lg-4">
       <Container>
@@ -18,8 +18,8 @@ const Footer = ({ onCall, contactLink }) => {
           </Col>
           <Col className=" p-3 p-lg-4" sm={12} md={12} lg={4}>
             <div className="d-flex flex-column  justify-content-center">
-              <Button onClick={onCall} className="btn--green">
-                {"Call Now"}
+              <Button className="btn btn--green">
+                <a href="tel:+1-555-555-1212">{"Call Us Now"}</a>
               </Button>
 
               <Link className="btn btn--yellow" to={contactLink}>
