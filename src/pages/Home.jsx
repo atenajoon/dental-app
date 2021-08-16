@@ -10,14 +10,11 @@ const Home = () => {
     console.log("calling");
   };
 
-  const handleMeetOurTeam = () => {
-    console.log("handleMeetOurTeam");
-  };
   return (
     <div>
       <Banner />
       <ContactBar onCall={handleCall} contactLink={`/Contact`} />
-      <WelcomeSection onMeetOurTeam={handleMeetOurTeam} />
+      <WelcomeSection aboutLink={`/About`} />
       <TestimonialSection />
       <ServiceSection />
     </div>

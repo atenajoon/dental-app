@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container } from "reactstrap";
-import Button from "../common/Button";
 
-const WelcomeSection = ({ onMeetOurTeam }) => {
+const WelcomeSection = ({ aboutLink }) => {
   return (
     <Container>
       <div
@@ -16,9 +16,9 @@ const WelcomeSection = ({ onMeetOurTeam }) => {
           needs. We proudly serve patients in ten different languages with
           extended office hours in a convenient, central Vancouver location.
         </p>
-        <Button onClick={onMeetOurTeam} className="btn">
-          {"Meet Our Team"}
-        </Button>
+        <Link className="btn" to={aboutLink}>
+          Meet Our Team
+        </Link>
       </div>
     </Container>
   );
