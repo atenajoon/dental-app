@@ -3,7 +3,7 @@ import Button from "../Button";
 import CommentCard from "../../CommentCard";
 import { testimonialSecData } from "../../../static/data";
 
-const Slider = () => {
+const Slider = ({ onGoogleClick }) => {
   return (
     <div className="slider-container">
       <div className=" d-flex justify-content-between slider-box">
@@ -13,7 +13,9 @@ const Slider = () => {
           </CommentCard>
         ))}
       </div>
-      <Button className="btn--alt">{"More Reviews on Google"}</Button>
+      <Button onClick={onGoogleClick} className="btn--alt">
+        {"More Reviews on Google"}
+      </Button>
     </div>
   );
 };
