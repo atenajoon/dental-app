@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import Address from "../../Address";
 import WorkingHours from "../../WorkingHours";
 import Button from "../Button";
 
-const Footer = ({ onCall, onAppointment }) => {
+const Footer = ({ onCall, contactLink }) => {
   return (
     <div id="footer-sec" className=" p-3 p-lg-4">
       <Container>
@@ -20,9 +21,10 @@ const Footer = ({ onCall, onAppointment }) => {
               <Button onClick={onCall} className="btn--green">
                 {"Call Now"}
               </Button>
-              <Button onClick={onAppointment} className="btn--yellow">
-                {"Request an Appointment"}
-              </Button>
+
+              <Link className="btn btn--yellow" to={contactLink}>
+                Request an Appointment
+              </Link>
             </div>
           </Col>
         </Row>

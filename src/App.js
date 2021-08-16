@@ -14,10 +14,6 @@ function App() {
     console.log("calling");
   };
 
-  const handleAppointment = () => {
-    console.log("handleAppointment");
-  };
-
   return (
     <React.Fragment>
       <Header />
@@ -32,7 +28,7 @@ function App() {
           <Redirect to="/not-found" />
         </Switch>
       </main>
-      <Footer onCall={handleCall} onAppointment={handleAppointment} />
+      <Footer onCall={handleCall} contactLink={`/Contact`} />
     </React.Fragment>
   );
 }
