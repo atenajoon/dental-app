@@ -11,9 +11,9 @@ import Footer from "./components/common/Footer";
 
 function App() {
   return (
-    <React.Fragment>
+    <div id="bootstrap-overrides">
       <Header />
-      <main id="bootstrap-overrides">
+      <main>
         <Switch>
           <Route path="/home" component={Home}></Route>
           <Route path="/about" component={About}></Route>
@@ -25,7 +25,7 @@ function App() {
         </Switch>
       </main>
       <Footer contactLink={`/Contact`} />
-    </React.Fragment>
+    </div>
   );
 }
 

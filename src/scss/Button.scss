@@ -1,44 +1,49 @@
 @use "variables";
 
-.btn {
-  font: inherit;
-  background-color: $cl-primary;
-  color: $cl-white;
-  //   box-shadow: inset -2px -1px 4px 0px rgb(0 0 0 / 25%);
-  margin: 0.7rem;
-  /* padding: 0.5rem 1.5rem;
+#bootstrap-overrides {
+  .btn {
+    font: inherit;
+    background-color: $cl-primary;
+    color: $cl-white;
+    //   box-shadow: inset -2px -1px 4px 0px rgb(0 0 0 / 25%);
+    margin: 0.7rem;
+    /* padding: 0.5rem 1.5rem;
       cursor: pointer;
       border-radius: 4px;
       border: 1px solid $primary); */
-}
-.btn:hover {
-  background-color: lighten($cl-primary, 5%);
-  border-color: lighten($cl-primary, 5%);
-}
-.btn--alt {
-  background-color: lighten($cl-primary, 70%);
-  // background-color: transparent;
-  color: $cl-primary;
-  border: 1px solid $cl-primary;
-}
-.btn--alt:hover {
-  background-color: $cl-primary;
-  color: $cl-white;
-}
-.btn--green {
-  background-color: $cl-secondary;
-  border-color: $cl-secondary;
-}
-.btn--green:hover {
-  background-color: darken($cl-secondary, 5%);
-  border-color: darken($cl-secondary, 5%);
-}
-.btn--yellow {
-  background-color: $cl-light;
-  border-color: $cl-light;
-  color: $cl-gray;
-}
-.btn--yellow:hover {
-  background-color: darken($cl-light, 5%);
-  border-color: darken($cl-light, 5%);
+  }
+  .btn:hover {
+    background-color: lighten($cl-primary, 5%);
+    border-color: lighten($cl-primary, 5%);
+  }
+  .btn--alt {
+    background-color: lighten($cl-primary, 70%);
+    // background-color: transparent;
+    color: $cl-primary;
+    border: 1px solid $cl-primary;
+  }
+  .btn--alt:hover {
+    background-color: $cl-primary;
+    color: $cl-white;
+  }
+  .btn--green {
+    background-color: $cl-secondary;
+    border-color: $cl-secondary;
+  }
+  .btn--green:hover {
+    background-color: darken($cl-secondary, 5%);
+    border-color: darken($cl-secondary, 5%);
+  }
+  .btn--yellow {
+    background-color: $cl-light;
+    border-color: $cl-light;
+    color: $cl-gray;
+  }
+  .btn--yellow:hover {
+    background-color: darken($cl-light, 5%);
+    border-color: darken($cl-light, 5%);
+  }
+  a {
+    color: $cl-white;
+  }
 }
