@@ -10,10 +10,14 @@ const Home = () => {
     console.log("calling");
   };
 
+  const handleAppointment = () => {
+    console.log("handleAppointment");
+  };
+
   return (
     <div>
       <Banner />
-      <ContactBar onCall={handleCall} />
+      <ContactBar onCall={handleCall} onAppointment={handleAppointment} />
       <WelcomeSection />
       <TestimonialSection />
       <ServiceSection />
