@@ -6,10 +6,14 @@ import TestimonialSection from "../components/TestimonialSection";
 import ServiceSection from "../components/ServiceSection";
 
 const Home = () => {
+  const handleCall = () => {
+    console.log("calling");
+  };
+
   return (
     <div>
       <Banner />
-      <ContactBar />
+      <ContactBar onCall={handleCall} />
       <WelcomeSection />
       <TestimonialSection />
       <ServiceSection />
