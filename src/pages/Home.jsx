@@ -14,11 +14,14 @@ const Home = () => {
     console.log("handleAppointment");
   };
 
+  const handleMeetOurTeam = () => {
+    console.log("handleMeetOurTeam");
+  };
   return (
     <div>
       <Banner />
       <ContactBar onCall={handleCall} onAppointment={handleAppointment} />
-      <WelcomeSection />
+      <WelcomeSection onMeetOurTeam={handleMeetOurTeam} />
       <TestimonialSection />
       <ServiceSection />
     </div>
