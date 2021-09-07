@@ -33,7 +33,7 @@ const Header = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
-                className="nav-link active"
+                className="nav-link"
                 aria-current="page"
                 to="/home"
               >

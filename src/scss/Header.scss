@@ -6,12 +6,18 @@
   background-color: $cl-dark;
   .nav-link {
     color: $cl-white;
+    margin: 0 10px;
   }
   .logo-text:hover,
   .fa-diamond:hover,
-  .nav-link:hover,
+  // .nav-link:hover,
   .active {
     color: lighten($cl-primary, 30%);
+  }
+  .nav-link:hover {
+    // color: lighten($cl-primary, 50%);
+    color: lighten($cl-black, 80%);;
+    transition: color 0.2s;
   }
   .container-fluid {
     padding: 0 5%;
