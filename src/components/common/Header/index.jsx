@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <nav id="nav" className=" navbar navbar-dark sticky-top navbar-expand-lg">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand myLogo nav-link" to="/">
           <i
             width="30"
             height="24"
             className="fa fa-diamond d-inline-block align-text-top"
           />
-          <span className="navbar-brand mb-0 h1 logo-text"> Dental-App</span>
+          <span className="navbar-brand mb-0 h1 logo-text">Dimond Dental-App</span>
         </Link>
 
         <button
