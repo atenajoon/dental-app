@@ -1,0 +1,4 @@
+1. Testimonial Slider
+2. burger menue
+3. map icon
+4. Footer sticks to the bottom
