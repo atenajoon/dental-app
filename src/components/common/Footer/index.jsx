@@ -1,13 +1,15 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import Address from "../../Address";
 import WorkingHours from "../../WorkingHours";
 import Button from "../Button";
 
-const Footer = ({ contactLink }) => {
+const Footer = forwardRef(({ contactLink, myFooterRef }) => {
+  console.log(myFooterRef);
   return (
-    <div id="footer-sec" className=" p-3 p-lg-4">
+    // ref is a built-in attribute
+    <div ref={myFooterRef} id="footer-sec" className=" p-3 p-lg-4">
       <Container>
         <Row className="align-items-center">
           <Col sm={12} md={6} lg={4}>
@@ -31,6 +33,6 @@ const Footer = ({ contactLink }) => {
       </Container>
     </div>
   );
-};
+});
 
 export default Footer;
