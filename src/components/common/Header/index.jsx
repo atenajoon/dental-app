@@ -1,9 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = forwardRef((props, ref) => {
   return (
-    <nav id="nav" className=" navbar navbar-dark sticky-top navbar-expand-lg">
+    <nav
+      ref={ref}
+      id="nav"
+      className=" navbar navbar-dark sticky-top navbar-expand-lg"
+    >
       <div className="container-fluid">
         <Link className="navbar-brand myLogo nav-link" to="/">
           <i
@@ -11,7 +15,9 @@ const Header = () => {
             height="24"
             className="fa fa-diamond d-inline-block align-text-top"
           />
-          <span className="navbar-brand mb-0 h1 logo-text">Dimond Dental-App</span>
+          <span className="navbar-brand mb-0 h1 logo-text">
+            Dimond Dental-App
+          </span>
         </Link>
 
         <button
@@ -32,11 +38,7 @@ const Header = () => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink
-                className="nav-link"
-                aria-current="page"
-                to="/home"
-              >
+              <NavLink className="nav-link" aria-current="page" to="/home">
                 Home
               </NavLink>
             </li>
@@ -60,6 +62,6 @@ const Header = () => {
       </div>
     </nav>
   );
-};
+});
 
 export default Header;
