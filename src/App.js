@@ -1,6 +1,7 @@
 import "./App.scss";
 import { Redirect, Route, Switch } from "react-router-dom";
-import React, { useRef, useEffect } from "react";
+import React, { createRef, useEffect } from "react";
+import useWindowDimensions from "./static/windowDimentions";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -10,19 +11,40 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 
 function App() {
-  // footerRef is an object with "current" property as a key
-  const footerRef = useRef();
-  const mainRef = useRef();
+  // footerRef is an object created by useRef, having "current" property as a key
+
+  // **
+  const { height } = useWindowDimensions();
+  const headerRef = createRef();
+  const mainRef = createRef();
+  const footerRef = createRef();
+
   useEffect(() => {
+    const headerHeight = headerRef.current.clientHeight;
+    const mainHeight = mainRef.current.clientHeight;
     const footerHeight = footerRef.current.clientHeight;
-    // mainRef.current.style.minHeight = "100vh" - footerHeight;
-    // const mainHeight = mainRef.current.clientHeight;
-    console.log(footerHeight, mainRef.current.style.minHeight);
+
+    let mainMinHeight = height - headerHeight - footerHeight;
+
+    // mainRef.current.style.minHeight = mainMinHeight;
+
+    console.log(
+      "height:",
+      height,
+      "headerHeight:",
+      headerHeight,
+      "footerHeight: ",
+      footerHeight,
+      "currentMainHeight: ",
+      mainHeight,
+      "minMainHeight: ",
+      mainMinHeight
+    );
   });
 
   return (
     <div id="bootstrap-overrides">
-      <Header />
+      <Header ref={headerRef} />
       <main ref={mainRef}>
         <Switch>
           <Route path="/home" component={Home}></Route>

@@ -6,6 +6,10 @@ import WorkingHours from "../../WorkingHours";
 import Button from "../Button";
 
 const Footer = forwardRef(({ contactLink, myFooterRef }) => {
+  // forwardRef() ref forwards child's ref to the parent
+  // Using forwardRef in React gives the child component a reference
+  // to a DOM element created by its parent component.
+  // This then allows the child to read and modify that element anywhere it is being used.
   console.log(myFooterRef);
   return (
     // ref is a built-in attribute
