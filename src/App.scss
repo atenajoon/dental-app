@@ -45,6 +45,10 @@
     //   background-attachment: fixed;
   }
 
+  #mapid {
+    height: 180px;
+  }
+
   @include media($xs) {
     flex-direction: column;
     align-items: center;
