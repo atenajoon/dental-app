@@ -3,9 +3,9 @@ import LefletMap from "../components/common/LeafletMap";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Contact</h1>
-      <div id="mapid">
+      <div>
         <LefletMap />
       </div>
     </div>
