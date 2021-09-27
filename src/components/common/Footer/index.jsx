@@ -17,7 +17,7 @@ const Footer = forwardRef(({ contactLink, myFooterRef }) => {
       <Container>
         <Row className="align-items-center">
           <Col sm={12} md={6} lg={4}>
-            <Address />
+            <Address contactLink={contactLink} />
           </Col>
           <Col sm={12} md={6} lg={4}>
             <WorkingHours />
