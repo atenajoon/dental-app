@@ -23,7 +23,7 @@ function App() {
     let mainMinHeight = height - headerHeight - footerHeight;
 
     setMinHeight(mainMinHeight);
-  }, [width, height]);
+  }, [width, height, headerRef, footerRef]);
 
   return (
     <div id="bootstrap-overrides">
