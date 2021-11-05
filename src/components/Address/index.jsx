@@ -9,9 +9,7 @@ const Address = ({ contactLink }) => {
       <p>
         236 Marin dr. <br></br>North Vancouver, BC.
       </p>
-      {/* <div className="map-icon-image"> */}
       <Link className="map-icon-image" to={contactLink}></Link>
-      {/* </div> */}
     </div>
   );
 };
