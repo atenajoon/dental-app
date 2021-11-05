@@ -35,7 +35,7 @@
     border-color: darken($cl-secondary, 5%);
   }
   .btn--yellow {
-    background-color: pink;
+    background-color: $cl-light;
     border-color: $cl-light;
     color: $cl-gray;
   }
