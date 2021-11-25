@@ -10,7 +10,7 @@ const Footer = forwardRef(({ contactLink, myFooterRef }) => {
   // Using forwardRef in React gives the child component a reference
   // to a DOM element created by its parent component.
   // This then allows the child to read and modify that element anywhere it is being used.
-  console.log(myFooterRef);
+  console.log("myFooterRef", myFooterRef);
   return (
     // ref is a built-in attribute
     <div ref={myFooterRef} id="footer-sec" className=" p-3 p-lg-4">
