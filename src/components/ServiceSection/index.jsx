@@ -14,9 +14,8 @@ const ServiceSection = () => {
       <h2 className="d-flex justify-content-center">Our Services</h2>
       <Row>
         {serviceSecData.map(({ id, name, imgSrc }) => (
-          <Col md={6} lg={4}>
+          <Col key={id} md={6} lg={4}>
             <ServiceCard
-              key={id}
               serviceLink={`/Services`}
               // serviceLink={`/service/${id}`}
               name={name}
