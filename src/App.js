@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-
+//test
 function App() {
   const [minHeight, setMinHeight] = useState(0);
   const { width, height } = useWindowDimensions();
